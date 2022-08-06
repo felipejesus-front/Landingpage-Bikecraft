@@ -8,3 +8,6 @@
 
 /* CSS da pagina HOME */
 @import "./home/introducao.css";
+
+/* CSS da lista de bicicletas */
+@import "./bicicletas/bicicletas-lista.css";
