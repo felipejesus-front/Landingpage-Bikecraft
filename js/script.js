@@ -22,3 +22,40 @@ function ativarProduto(parametro){
     }
 }
 parametros.forEach(ativarProduto);
+
+// Perguntas frequentes
+
+const perguntas = document.querySelectorAll('.perguntas button');
+
+function ativarPergunta(event){
+    const pergunta = event.currentTarget;
+    const controls = pergunta.getAttribute('aria-controls')
+    const resposta = document.getElementById(controls)
+    
+    resposta.classList.toggle('ativa')
+    const isActive = resposta.classList.contains('ativa');
+    pergunta.setAttribute('aria-expended', isActive)
+}
+
+function eventosPerguntas(pergunta){
+    pergunta.addEventListener('click', ativarPergunta);
+}
+
+perguntas.forEach(eventosPerguntas);
+
+//galeria de bicicletas
+const galereria = document.querySelectorAll('.bicicleta-imagens img')
+const galereriaContainer = document.querySelector('.bicicleta-imagens')
+
+function trocarImagem(event){
+    const img = event.currentTarget;
+    const media = matchMedia('(min-width: 1000px)').matches;
+    if(media){
+        galereriaContainer.prepend(img)
+    }
+}
+
+function eventosGaleria(img){
+    img.addEventListener('click', trocarImagem)
+}
+galereria.forEach(eventosGaleria);
