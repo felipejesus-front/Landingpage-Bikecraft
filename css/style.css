@@ -1,6 +1,9 @@
 @import "./global/global.css";
 @import "./utilidades/tipografia.css";
 @import "./utilidades/cores.css";
+/* CSS da animação de componentes */
+@import "./utilidades/animacao.css";
+
 @import "./global/header.css";
 @import "./global/footer.css";
 
@@ -36,5 +39,8 @@
 
 /* CSS da pagina de orçamento */
 @import "./orcamento/orcamento.css";
+
+
+
 
 

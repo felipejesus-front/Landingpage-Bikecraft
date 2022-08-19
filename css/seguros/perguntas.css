@@ -36,7 +36,6 @@
     background-color: var(--cor-p1);
 }
 
-
 .perguntas button::after {
     content: '';
     display: inline-block;
@@ -49,11 +48,12 @@
     transform: rotate(180deg);
 }
 
-.perguntas dd {
+.js .perguntas dd {
  
     display: none;
 }
-.perguntas dd.ativa {
+
+.js .perguntas dd.ativa {
     display: block;
 }
 

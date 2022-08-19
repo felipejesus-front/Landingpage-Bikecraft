@@ -59,3 +59,9 @@ function eventosGaleria(img){
     img.addEventListener('click', trocarImagem)
 }
 galereria.forEach(eventosGaleria);
+
+// Iniciando animação
+
+if(window.SimpleAnime){
+    new SimpleAnime();
+}
